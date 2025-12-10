@@ -938,6 +938,11 @@ export const deleteTokenFromPool = async (token: string): Promise<{ success: boo
 
 // NEW FUNCTION: Calculate total platform usage
 export const getTotalPlatformUsage = async (): Promise<{ totalImages: number; totalVideos: number }> => {
+    // MANUALLY DISABLED: Logic temporarily disabled due to data discrepancies.
+    // To re-enable, delete this return statement and uncomment the logic block below.
+    return { totalImages: XXX, totalVideos: XXX };
+
+    /*
     try {
         const { data, error } = await supabase
             .from('users')
@@ -964,4 +969,5 @@ export const getTotalPlatformUsage = async (): Promise<{ totalImages: number; to
         console.error("Failed to fetch platform usage stats:", getErrorMessage(error));
         return { totalImages: 0, totalVideos: 0 };
     }
+    */
 };
