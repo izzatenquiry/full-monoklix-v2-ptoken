@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect } from 'react';
 import { editOrComposeWithImagen } from '../../services/imagenV3Service';
 import { addHistoryItem } from '../../services/historyService';
@@ -134,8 +135,8 @@ const BackgroundRemoverView: React.FC<BackgroundRemoverViewProps> = ({ onReEdit,
   const leftPanel = (
     <>
       <div>
-        <h1 className="text-2xl font-bold sm:text-3xl">AI Background Remover</h1>
-        <p className="text-neutral-500 dark:text-neutral-400 mt-1">Automatically remove the background from any image.</p>
+        <h1 className="text-xl font-bold sm:text-3xl">AI Background Remover</h1>
+        <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">Automatically remove the background from any image.</p>
       </div>
       
       <div className="flex-1 flex flex-col justify-center">

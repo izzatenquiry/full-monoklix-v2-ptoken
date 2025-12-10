@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect, useRef, useMemo } from 'react';
 import ImageUpload from '../common/ImageUpload';
 import { type MultimodalContent } from '../../services/geminiService';
@@ -258,8 +259,8 @@ const TiktokAffiliateView: React.FC<TiktokAffiliateViewProps> = ({ onReEdit, onC
     const leftPanel = (
       <>
           <div>
-            <h1 className="text-2xl font-bold sm:text-3xl">{T.title}</h1>
-            <p className="text-neutral-500 dark:text-neutral-400 mt-1">{T.subtitle}</p>
+            <h1 className="text-xl font-bold sm:text-3xl">{T.title}</h1>
+            <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">{T.subtitle}</p>
           </div>
           
           <Section title={T.assetAndModel}>

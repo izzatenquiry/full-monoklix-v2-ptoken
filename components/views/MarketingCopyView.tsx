@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect } from 'react';
 import { generateText } from '../../services/geminiService';
 import { addHistoryItem } from '../../services/historyService';
@@ -118,8 +119,8 @@ const MarketingCopyView: React.FC<MarketingCopyViewProps> = ({ language }) => {
     const leftPanel = (
         <>
             <div>
-                <h1 className="text-2xl font-bold sm:text-3xl">AI Marketing Copywriter</h1>
-                <p className="text-neutral-500 dark:text-neutral-400 mt-1">Generate persuasive copy for ads, posts, and websites.</p>
+                <h1 className="text-xl font-bold sm:text-3xl">AI Marketing Copywriter</h1>
+                <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">Generate persuasive copy for ads, posts, and websites.</p>
             </div>
 
             <div>

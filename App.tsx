@@ -9,7 +9,8 @@ import AiVideoSuiteView from './components/views/AiVideoSuiteView';
 import ECourseView from './components/views/ECourseView';
 import SettingsView from './components/views/SettingsView';
 import LoginPage from './LoginPage';
-import GalleryView from './components/views/GalleryView';
+// FIX: Update GalleryView import to named import
+import { GalleryView } from './components/views/GalleryView';
 import WelcomeAnimation from './components/WelcomeAnimation';
 import LibraryView from './components/views/LibraryView';
 import { MenuIcon, LogoIcon, XIcon, SunIcon, MoonIcon, CheckCircleIcon, AlertTriangleIcon, PartyPopperIcon, RefreshCwIcon, UsersIcon, ServerIcon, ShieldCheckIcon, TerminalIcon, SparklesIcon, ChevronRightIcon, AppleIcon } from './components/Icons';

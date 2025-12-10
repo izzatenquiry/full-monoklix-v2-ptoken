@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useMemo } from 'react';
 import Spinner from '../common/Spinner';
 import { SparklesIcon, ClipboardIcon, CheckCircleIcon } from '../Icons';
@@ -103,8 +104,8 @@ const PromptViralMyView: React.FC<PromptViralMyViewProps> = ({ onUsePrompt }) =>
         <div className="space-y-6">
             <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
                 <div>
-                    <h1 className="text-2xl font-bold sm:text-3xl">Viral Prompts (MY)</h1>
-                    <p className="text-neutral-500 dark:text-neutral-400 mt-1">A list of prompts specially curated for the Malaysian market.</p>
+                    <h1 className="text-xl font-bold sm:text-3xl">Viral Prompts (MY)</h1>
+                    <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">A list of prompts specially curated for the Malaysian market.</p>
                 </div>
                  <input
                     type="text"

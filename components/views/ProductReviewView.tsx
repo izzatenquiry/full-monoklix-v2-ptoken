@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect, useRef, useMemo } from 'react';
 import ImageUpload from '../common/ImageUpload';
 // FIX: Removed invalid import for 'composeImage'.
@@ -774,8 +775,8 @@ const ProductReviewView: React.FC<ProductReviewViewProps> = ({ onReEdit, onCreat
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-2xl font-bold sm:text-3xl">AI Video Storyboard</h1>
-        <p className="text-neutral-500 dark:text-neutral-400 mt-1">A powerful 3-step workflow to generate a complete 4-scene product review video, from script to final clips.</p>
+        <h1 className="text-xl font-bold sm:text-3xl">AI Video Storyboard</h1>
+        <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">A powerful 3-step workflow to generate a complete 4-scene product review video, from script to final clips.</p>
         <div className="flex gap-2 mt-2">
             <div className="inline-flex items-center gap-1.5 px-2 py-1 rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 text-xs font-medium border border-blue-100 dark:border-blue-800">
                 <UsersIcon className="w-3 h-3" />

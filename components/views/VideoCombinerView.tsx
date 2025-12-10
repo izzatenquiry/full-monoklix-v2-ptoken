@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { getHistory } from '../../services/historyService';
 // FIX: Add missing Language import.
@@ -235,8 +236,8 @@ const VideoCombinerView: React.FC<{ language: Language }> = ({ language }) => {
     const leftPanel = (
         <>
             <div>
-                <h1 className="text-2xl font-bold sm:text-3xl">Video Combiner</h1>
-                <p className="text-neutral-500 dark:text-neutral-400 mt-1">Combine multiple clips from your gallery into a single video.</p>
+                <h1 className="text-xl font-bold sm:text-3xl">Video Combiner</h1>
+                <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">Combine multiple clips from your gallery into a single video.</p>
             </div>
             
             <div className="flex-1 flex flex-col min-h-0">

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useMemo } from 'react';
 import Spinner from '../common/Spinner';
 import { LibraryIcon, ClipboardIcon, CheckCircleIcon } from '../Icons';
@@ -180,8 +181,8 @@ const LibraryView: React.FC<LibraryViewProps> = ({ onUsePrompt }) => {
         <div className="space-y-6">
             <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-4">
                 <div>
-                    <h1 className="text-2xl font-bold sm:text-3xl">Prompt Library</h1>
-                    <p className="text-neutral-500 dark:text-neutral-400 mt-1">A curated collection of prompts and cases to inspire your creations.</p>
+                    <h1 className="text-xl font-bold sm:text-3xl">Prompt Library</h1>
+                    <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">A curated collection of prompts and cases to inspire your creations.</p>
                 </div>
                 <input
                     type="text"

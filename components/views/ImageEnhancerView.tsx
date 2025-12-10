@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect } from 'react';
 import { addHistoryItem } from '../../services/historyService';
 import ImageUpload from '../common/ImageUpload';
@@ -144,8 +145,8 @@ const ImageEnhancerView: React.FC<ImageEnhancerViewProps> = ({ onReEdit, onCreat
   const leftPanel = (
     <>
       <div>
-        <h1 className="text-2xl font-bold sm:text-3xl">AI Image Enhancer</h1>
-        <p className="text-neutral-500 dark:text-neutral-400 mt-1">Improve the quality and colors of your images.</p>
+        <h1 className="text-xl font-bold sm:text-3xl">AI Image Enhancer</h1>
+        <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">Improve the quality and colors of your images.</p>
       </div>
       
       <div className="flex-1 flex flex-col justify-center">

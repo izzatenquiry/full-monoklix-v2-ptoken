@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useMemo, useEffect } from 'react';
 import { generateText } from '../../services/geminiService';
 import { addHistoryItem } from '../../services/historyService';
@@ -140,8 +141,8 @@ const StaffMonoklixView: React.FC<StaffMonoklixViewProps> = ({ language }) => {
     const leftPanel = (
         <>
             <div>
-                <h1 className="text-2xl font-bold sm:text-3xl">{T.title}</h1>
-                <p className="text-neutral-500 dark:text-neutral-400 mt-1">{T.subtitle}</p>
+                <h1 className="text-xl font-bold sm:text-3xl">{T.title}</h1>
+                <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">{T.subtitle}</p>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">

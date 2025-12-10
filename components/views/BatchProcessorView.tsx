@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { generateVideo } from '../../services/geminiService';
 import { addHistoryItem } from '../../services/historyService';
@@ -187,8 +188,8 @@ const BatchProcessorView: React.FC<BatchProcessorViewProps> = ({ preset, clearPr
       {/* Left Panel: Controls */}
       <div className="bg-white dark:bg-neutral-900 p-6 rounded-lg shadow-sm flex flex-col gap-4 overflow-y-auto pr-2 custom-scrollbar">
         <div>
-          <h1 className="text-2xl font-bold sm:text-3xl">Batch Video Processor</h1>
-          <p className="text-neutral-500 dark:text-neutral-400 mt-1">Generate multiple videos from a list of prompts.</p>
+          <h1 className="text-xl font-bold sm:text-3xl">Batch Video Processor</h1>
+          <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">Generate multiple videos from a list of prompts.</p>
         </div>
 
         <div>

@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { getHistory, deleteHistoryItem } from '../../services/historyService';
 // FIX: Add missing Language import.
@@ -443,8 +444,8 @@ const GalleryView: React.FC<GalleryViewProps> = ({ onCreateVideo, onReEdit, lang
     return (
         <div className="h-full flex flex-col">
             <div className="flex-shrink-0">
-                <h1 className="text-2xl font-bold sm:text-3xl">{T.title}</h1>
-                <p className="text-neutral-500 dark:text-neutral-400 mt-1">{T.subtitle}</p>
+                <h1 className="text-xl font-bold sm:text-3xl">{T.title}</h1>
+                <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">{T.subtitle}</p>
             </div>
             
             <div className="flex-shrink-0 my-6 flex justify-center">
@@ -476,7 +477,6 @@ const GalleryView: React.FC<GalleryViewProps> = ({ onCreateVideo, onReEdit, lang
                     }}
                     hasNext={previewIndex !== null && previewIndex < itemsToDisplay.length - 1}
                     hasPrevious={previewIndex !== null && previewIndex > 0}
-                    // FIX: Pass the 'language' prop to the PreviewModal component.
                     language={language}
                 />
             )}
@@ -484,4 +484,5 @@ const GalleryView: React.FC<GalleryViewProps> = ({ onCreateVideo, onReEdit, lang
     );
 };
 
-export default GalleryView;
+// FIX: Change to named export to match the import in App.tsx
+export { GalleryView };

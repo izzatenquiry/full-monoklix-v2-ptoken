@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { MicIcon, DownloadIcon, AlertTriangleIcon } from '../Icons';
 import { generateVoiceOver } from '../../services/geminiService';
@@ -162,8 +163,8 @@ const VoiceStudioView: React.FC<VoiceStudioViewProps> = ({ language }) => {
     const leftPanel = (
         <>
             <div>
-                <h1 className="text-2xl font-bold sm:text-3xl">AI Voice Studio</h1>
-                <p className="text-neutral-500 dark:text-neutral-400 mt-1">Turn text into high-quality, natural-sounding speech.</p>
+                <h1 className="text-xl font-bold sm:text-3xl">AI Voice Studio</h1>
+                <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">Turn text into high-quality, natural-sounding speech.</p>
             </div>
 
             <Section title="Write Your Script or Lyrics">

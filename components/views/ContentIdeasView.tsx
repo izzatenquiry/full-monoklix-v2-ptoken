@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect } from 'react';
 import { generateContentWithGoogleSearch } from '../../services/geminiService';
 import { addHistoryItem } from '../../services/historyService';
@@ -104,8 +105,8 @@ const ContentIdeasView: React.FC<ContentIdeasViewProps> = ({ language }) => {
     const leftPanel = (
         <>
             <div>
-                <h1 className="text-2xl font-bold sm:text-3xl">AI Content Idea Generator</h1>
-                <p className="text-neutral-500 dark:text-neutral-400 mt-1">Discover trending and engaging content ideas for any topic.</p>
+                <h1 className="text-xl font-bold sm:text-3xl">AI Content Idea Generator</h1>
+                <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">Discover trending and engaging content ideas for any topic.</p>
             </div>
             
             <div className="flex-1 flex flex-col justify-center gap-4">
