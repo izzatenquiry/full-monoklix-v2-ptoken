@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { addHistoryItem } from '../../services/historyService';
 import Spinner from '../common/Spinner';
@@ -308,8 +309,8 @@ const ImageGenerationView: React.FC<ImageGenerationViewProps> = ({ onCreateVideo
   const leftPanel = (
     <>
       <div>
-        <h1 className="text-2xl font-bold sm:text-3xl">{isEditing ? 'AI Image Editor' : 'AI Image Generation'}</h1>
-        <p className="text-neutral-500 dark:text-neutral-400 mt-1">{isEditing ? 'Edit your images with simple text commands.' : 'Create stunning images from text descriptions.'}</p>
+        <h1 className="text-xl font-bold sm:text-3xl">{isEditing ? 'AI Image Editor' : 'AI Image Generation'}</h1>
+        <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">{isEditing ? 'Edit your images with simple text commands.' : 'Create stunning images from text descriptions.'}</p>
       </div>
       
       <div>

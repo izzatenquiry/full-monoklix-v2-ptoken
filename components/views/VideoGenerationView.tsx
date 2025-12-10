@@ -1,3 +1,4 @@
+
 import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { generateVideo } from '../../services/geminiService';
 import { addHistoryItem } from '../../services/historyService';
@@ -440,8 +441,8 @@ const VideoGenerationView: React.FC<VideoGenerationViewProps> = ({ preset, clear
   const leftPanel = (
     <>
         <div>
-            <h1 className="text-2xl font-bold sm:text-3xl">AI Video Generator</h1>
-            <p className="text-neutral-500 dark:text-neutral-400 mt-1">Create high-quality videos from text or images.</p>
+            <h1 className="text-xl font-bold sm:text-3xl">AI Video Generator</h1>
+            <p className="text-sm sm:text-base text-neutral-500 dark:text-neutral-400 mt-1">Create high-quality videos from text or images.</p>
         </div>
         
         <div>
